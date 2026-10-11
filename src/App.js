@@ -4,15 +4,17 @@ function App() {
   return (
     <div>
       <TextExpander />
-
+      <TextExpander />
+      <TextExpander />
     </div>
   );
 }
 
 function TextExpander() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const displayText = isExpanded ? "Hello world" : "Test";
   return (
-    <>Todo</>
+    <>{displayText}</>
   )
 }
 
